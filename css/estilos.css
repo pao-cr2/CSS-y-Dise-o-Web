@@ -1,0 +1,358 @@
+/*
+Autor:Paola Andrea Cuervo
+**CSS y Diseño Web Responsive**
+Descricpion:Estilo css Pagina index*/
+
+body {
+	font-family: 'Dancing Script', cursive;
+  width: 100%;
+	margin:0px;
+	background-color: #02010a;
+}
+
+header {
+	background: #5b7989;
+  padding: 19px;
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px 2px #02010a;
+	border-radius: 10px 10px 0px 0px;
+	font-size: 35px;
+}
+/*menu*/
+nav {
+  float: right;
+  vertical-align: middle;
+}
+
+nav>a {
+    font-size: 15px;
+		color: white;
+		text-shadow: 0px 0px 0px #000000;
+}
+
+nav>a.seleccionado {
+  text-decoration: none;
+}
+
+img {
+  box-shadow: 2px 2px 2px #02010A;
+}
+/*Div de contenido*/
+#contenido {
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*Seccion centro imagen principal*/
+#centro {
+background-color:#82c3a6;
+margin: 0px;
+padding: 15px;
+}
+/*Seccion segundo 2 imagenes*/
+
+#segundo {
+background-color: #d5c75f;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: 0px;
+justify-content:center;
+align-items: space-around;
+-webkit-align-items: center;
+-webkit-flex-direction: row;
+-webkit-display: flex;
+-webkit-justify-content: space-around;
+-webkit-flex-wrap: wrap;
+
+}
+
+#segundo>div {
+width: 50%;
+}
+
+figure {
+	text-align: center;
+	}
+
+#imagen1 figure img {
+	width: 520px;
+}
+
+#imagen1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#imagen2 figure img {
+	width: 320px;
+}
+
+#imagen2 {
+	order: 1;
+	-webkit-order:1;
+}
+
+#imagen2 img:hover{
+	 transform: rotate(10deg);
+	 box-shadow: 2px 2px 2px #82c3a6;
+   border: 2px solid black;
+}
+#imagen3 figure img {
+	width: 320px;
+}
+
+#imagen3 {
+	order: 2;
+	-webkit-order:2;
+}
+
+#imagen3 img:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px #82c3a6;
+	border: 2px solid black;
+}
+
+.pie {
+	border-radius: 0px 0px 10px 10px;
+	margin: 0px;
+	background-color: #C6d5c5;
+	padding: 15px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: flex-start;
+}
+.pie >div {
+	margin-left: auto;
+  margin-right: auto;
+	 width: 25%;
+}
+
+#Contacto {
+  order: 1;
+  -webkit-order: 1;
+}
+#Frase {
+  order: 2;
+  -webkit-order: 2;
+}
+#Redes {
+  order: 3;
+  -webkit-order: 3;
+}
+
+#Derechos {
+  order: 4;
+  -webkit-order: 4;
+}
+.pie>div>a>img.red {
+  border-style: none;
+  box-shadow: 0px 0px 0px #000000;
+  width: 16px
+}
+
+
+/*pagina paisajes*/
+#galeria {
+  margin: 0px;
+  background: #d5c75f;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: space-around;
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+}
+
+#galeria>div {
+  margin-bottom: 15px;
+	width: 33%;
+}
+
+#galeria div figure>img{
+	flex: 1 1;
+	-webkit-flex:0 0;
+	border: 1px black solid;
+	width: 230px;
+}
+
+#galeria>div:first-child figure>img {
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-o-filter: blur(10px);
+	filter: blur(10px);
+}
+/*Imagen 3*/
+#mar>figure>img {
+	-webkit-filter: sepia(90%);
+	-moz-filter: sepia(90%);
+	-ms-filter: sepia(90%);
+	-o-filter: sepia(90%);
+	filter: sepia(90%);
+}
+/*Imagenes pares*/
+#galeria>div:nth-child(even) figure>img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#globo {
+  order: 1;
+  -webkit-order: 1;
+  margin-top: 15px;
+}
+
+#rocas {
+  order: 2;
+  -webkit-order: 2;
+  margin-top: 15px;
+}
+
+#mar {
+  order: 3;
+  -webkit-order: 3;
+  margin-top: 15px;
+}
+
+#nature {
+  order: 4;
+  -webkit-order: 4;
+}
+
+#fantasy {
+  order: 5;
+  -webkit-order: 5;
+}
+
+#faro {
+  order: 6;
+  -webkit-order: 6;
+}
+
+/*Media queries*/
+@media (max-width: 899px){
+/*Pagina index */
+#contenido {
+    width: 100%;
+		margin: 0px;
+}
+nav {
+	float: none;
+}
+
+#imagen1{
+		width: 100%;
+	}
+
+#imagen1 figure img {
+		width: 280px;
+	}
+
+#centro {
+	margin: 0px;
+	padding: 8px;
+}
+
+#segundo {
+	 flex-direction: column;
+	 -webkit-flex-direction: column;
+	 margin: 0px;
+	 padding: 8px;
+		}
+
+#segundo>div {
+	  width: 100%;
+		margin-left: 10%;
+    margin-right: 10%;
+	  }
+
+	#segundo>div>a>figure>img {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+			align-content: center;
+	    width: 220px;
+	  }
+
+	  .pie {
+	      flex-direction: column;
+	      -webkit-flex-direction: column;
+	  }
+
+	  .pie>div {
+	    width: 100%;
+	  }
+
+
+		#Contacto {
+		 margin-bottom: 10px;
+		}
+		#Frase {
+		  margin-bottom: 10px;
+		}
+		#Redes {
+		 margin-bottom: 10px;
+		}
+
+		#Derechos {
+		 margin-bottom: 10px;
+		}
+
+	  .pie>div {
+	    max-width: 320px;
+	    margin-left: auto;
+	    margin-right: auto;
+	  }
+
+
+/*Pagina de Paisajes*/
+#galeria {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+  }
+	#globo {
+    margin-top: 0px;
+  }
+  #rocas {
+    margin-top: 0px;
+  }
+  #mar {
+    margin-bottom: 15px;
+  }
+  #nature {
+    margin-bottom: 15px;
+  }
+  #fantasy {
+    margin-bottom: 15px;
+  }
+  #galeria>div {
+    width: 100%;
+  }
+
+
+#galeria>div>figure>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+  }
+
+}
